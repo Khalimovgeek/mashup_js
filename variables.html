@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js variables</title>
+
+</head>
+<body>
+    <p id ="test"></p>
+    <p id ="test_1"></p>
+
+    <script>
+        // variable initialization
+        var x;
+        var y = 10;
+        x = 5;
+        var a = 3 , v = 3;
+        var z;
+        // type of variables with no value is undefined
+        console.log(typeof(z));
+
+        // variable vale to element in html
+        document.getElementById("test").innerHTML = x;
+        document.getElementById("test_1").innerHTML = a;
+
+        //  in js it is possible to redeclare variable. For example,
+        var v;
+        // this will give no error.
+        console.log(typeof(v));
+        // this will return the type number as it already has a value.
+
+
+        // js addition 
+
+        //   js can add two numbers 
+        var x = a +v;
+        //  but one of the variable is string then 
+
+        var k = "6"
+        var z = k +a +v;
+        var m = "5" +9+7
+        console.log(m);
+        console.log(z)
+    </script>
+</body>
+</html>
