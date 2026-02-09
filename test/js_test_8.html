@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js test 7</title>
+</head>
+<body>
+
+    <p id="test_var"></p>
+    <script>
+        var x = prompt("Enter your name");
+        var y = Number(prompt("Enter your mark"));
+        
+        window.alert( `your name is ${x} and your mark is ${y}`);
+        console.log( `your name is ${x} and your mark is ${y}`);
+        document.getElementById("test_var").innerHTML =  `your name is ${x} and your mark is ${y}`;
+        document.write( `your name is ${x} and your mark is ${y}`);
+    </script>
+</body>
+</html>
