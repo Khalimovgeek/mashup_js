@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js test 45</title>
+</head>
+<body>
+    <script>
+        // input age and have_licence(true false) from user
+        age = Number(prompt("Enter your age"));
+        have_licence = prompt("Do you have licence?")
+        
+        // nested if
+        if(age>=18){
+            if(have_licence == "true"){
+                result = "you are legally eligible to drive";
+            }
+            else{
+                result = "you are not eligible to drive";
+            }
+        }
+        else{
+            result = "you are not eligible to drive";
+        }
+
+        // output
+        document.writeln(result);
+    </script>
+</body>
+</html>
