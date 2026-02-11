@@ -8,13 +8,12 @@
 <body>
     <script>
 
-        // get username, passwords from user
+        // get username, passwor from user
         username = prompt("Enter the username")
         password = prompt("Enter the password")
-        password_c = prompt("Confirm the password")
 
-        // ternary opreation to check the password
-        result = (password == password_c)? "access granted" : "invalid access"
+        // ternary opreation to check the password == 1234 and username == admin
+        result = (username == "admin" && password == "1234")? "access granted" : "invalid access"
 
         // result output
         document.writeln(result);
