@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js test 43</title>
+</head>
+<body>
+    <script>
+
+        // get username, passwor from user
+        username = prompt("Enter the username")
+        password = prompt("Enter the password")
+
+        //  nested if 
+
+        if(username == "admin"){
+            if(password == "1234"){
+                result = "access granted";
+            }
+            else{
+                result = "invalid password";
+            }
+        }
+        else{
+            if(password == "1234"){
+                result = "invalid  username";
+            }
+            else{
+                result = "invalid username and password";
+            }
+        }
+
+        // result output
+        document.writeln(result);
+    </script>
+</body>
+</html>
