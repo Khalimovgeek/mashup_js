@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js test 37</title>
+</head>
+<body>
+    <script>
+
+        // get username, passwords from user
+        username = prompt("Enter the username")
+        password = prompt("Enter the password")
+        password_c = prompt("Confirm the password")
+
+        // ternary opreation to check the password
+        result = (password == password_c)? "access granted" : "invalid access"
+
+        // result output
+        document.writeln(result);
+    </script>
+</body>
+</html>
