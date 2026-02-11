@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js test 47</title>
+</head>
+<body>
+    <script>
+        day = Number(prompt("Enter the number"));
+
+        day %= 7;
+
+        switch(day){
+            case 1 :
+                document.writeln("Monday");
+                break;
+            case 2 :
+                document.writeln("Tuesday");
+                break;
+            case 3 :
+                document.writeln("Wednesday");
+                break;
+            case 4 :
+                document.writeln("Thursday");
+                break;
+            case 5 :
+                document.writeln("Friday");
+                break;
+            case 6 :
+                document.writeln("Saturday");
+                break;
+            case 0 :
+                document.writeln("Sunday");
+                break;
+
+            default :
+                document.writeln("today is wednesday");
+                break;
+        }
+        
+    </script>
+</body>
+</html>
