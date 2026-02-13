@@ -12,34 +12,35 @@
 
         // diamond
         // pyramid up
+         text = ""
         for(i =0;i<5;i++){
-            text = ""
+           
             for(j=0;j< 5 -i;j++){
                 
-                text += "&ThickSpace;";
+                text += " ";
             }
             for(k =0; k<i+1;k++){
                 text +=  " * "
             }
-            text += "<br>";
+            text += "\n";
 
-            document.writeln(text);
+            
         }
-
+        
         // pyramid down
         for(i =0;i<4;i++){
-            text = "&ThickSpace;"
+
             for(j=5;j> 4 -i;j--){
                 
-                text += "&ThickSpace;";
+                text += "  ";
             }
             for(k =4; k>i;k--){
                 text +=  " * "
             }
-            text += "<br>";
+            text += "\n";
 
-            document.writeln(text);
         }
+        console.log(text);
     </script>
 </body>
 </html>
