@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop pyramid</title>
+</head>
+<body>
+    
+    <script>
+        var i;
+
+        // diamond
+        // pyramid up
+        for(i =0;i<5;i++){
+            text = ""
+            for(j=0;j< 5 -i;j++){
+                
+                text += "&ThickSpace;";
+            }
+            for(k =0; k<i+1;k++){
+                text +=  " * "
+            }
+            text += "<br>";
+
+            document.writeln(text);
+        }
+
+        // pyramid down
+        for(i =0;i<4;i++){
+            text = "&ThickSpace;"
+            for(j=5;j> 4 -i;j--){
+                
+                text += "&ThickSpace;";
+            }
+            for(k =4; k>i;k--){
+                text +=  " * "
+            }
+            text += "<br>";
+
+            document.writeln(text);
+        }
+    </script>
+</body>
+</html>
