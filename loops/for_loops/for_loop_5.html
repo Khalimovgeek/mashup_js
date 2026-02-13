@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For loop butterfly</title>
+</head>
+<body>
+    <script>
+        text = "";
+        for(i = 0; i <9 ; i++){
+            for(j = 0;j<9;j++){
+                if(j == i | j == 0 | j == 8 | 8-i == j){
+                    text += "*";
+                }
+                else{
+                    text += " ";
+                }
+            }
+            text += "\n";
+        }
+        console.log(text);
+    </script>
+</body>
+</html>
