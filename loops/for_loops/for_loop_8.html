@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js for loop</title>
+</head>
+<body>
+    <script>
+        
+
+        // number pyramid
+        for(var i =1;i<=4;i++){
+            temp  ="";
+            for(j =0; j< 4-i;j++){
+                temp += " ";
+            }
+            for(j = 0; j<i;j++){
+                temp += `${i} `;
+            }
+            console.log(temp);
+        }
+
+        console.log(" ");
+        // pyramid down
+
+        for(var k = 4;k>=1;k--){
+            temp=""; 
+            for(j = 0; j<4-k;j++)
+            {
+                temp += " ";
+            }
+            for(j = 0; j<k;j++){
+                temp += `${k} `;
+            }
+            console.log(temp);
+        }
+
+    </script>
+</body>
+</html>
