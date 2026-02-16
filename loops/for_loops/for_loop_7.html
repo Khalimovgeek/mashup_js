@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js for loop</title>
+</head>
+<body>
+    <script>
+        
+        var inc = 0;
+        for(var i = 1; i<=4;i++){
+            temp = "";
+            for( var j = 1;j<=i;j++){
+                no = inc + j; 
+                temp += no;
+                if (j == i){
+                    inc = no
+                }
+            }
+            console.log(temp)
+        }
+    </script>
+</body>
+</html>
