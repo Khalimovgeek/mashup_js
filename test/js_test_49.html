@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js test 49</title>
+</head>
+<body>
+
+    <script>
+        function inRange(number){
+            console.log(number);
+            if(number >= 5 && number <= 10){
+                return  "The number is in range";
+            }
+            else{
+                return "the number is not in range"
+            }
+
+        }
+        number = Number(prompt("Enter your number"));
+        rangeOrNot = inRange(number);
+
+        document.writeln(rangeOrNot);
+    </script>
+</body>
+</html>
