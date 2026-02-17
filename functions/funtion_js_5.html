@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js functions</title>
+</head>
+<body>
+
+
+    <p>Outside the MyFunction() typeof(language) is undefined.</p>
+    <p id="value"></p>
+    <p id="before"></p>
+    <p id="after"></p>
+    <script>
+
+        function MyFunction(){
+            var x = "hi"
+            document.getElementById("value").innerHTML  = "value of x is "+x;
+            document.getElementById("before").innerHTML =  "type of x inside funtion is  " + typeof(x);
+        }
+        MyFunction();
+        document.getElementById("after").innerHTML = "type of x outside funtion is  " +typeof(x);
+
+    </script>
+</body>
+</html>
