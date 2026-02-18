@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js test 56</title>
+</head>
+<body>
+    <h2>Sorting of array using loops</h2>
+    
+    <h3>ascending order</h3>
+    <p id="ascending"></p>
+
+    <h3>descending order</h3>
+    <p id="descending"></p>
+    <script>
+
+        // initialize array
+        arr = [1,288,144,41,14,22,43,66,6,2,7,9,3,2,6,3,86,4,2,77,66,334];
+
+        // find the length of the array
+        var len = arr.length;
+        console.log(len);
+
+
+        // bubble sort
+        for(let i=0;i<len;i++){
+            for(let j=i;j<len;j++){
+                if(arr[i]>arr[j]){
+                    arr[i] += arr[j];
+                    arr[j] = arr[i] - arr[j];
+                    arr[i] = arr[i] - arr[j]; 
+                }
+            }
+        }
+
+        // print the sorted array
+        console.log(arr);
+        document.getElementById("ascending").innerHTML = arr;
+        
+
+        // bubble sort in reverse
+        for(let i=0;i<len;i++){
+            for(let j=i;j<len;j++){
+                if(arr[i]<arr[j]){
+                    arr[i] += arr[j];
+                    arr[j] = arr[i] - arr[j];
+                    arr[i] = arr[i] - arr[j]; 
+                }
+            }
+        }
+        
+
+        // sorted in descending order
+        console.log(arr);
+        document.getElementById("descending").innerHTML = arr;
+
+        
+    </script>
+</body>
+</html>
