@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js test 54</title>
+</head>
+<body>
+    <script>
+
+        // initialize array
+        arr = [13,42,32,12,4,11,6,3,22,10,34,21,666764,66666666620];
+        
+        largest = arr[0];
+
+        // for each loop to find largest
+        arr.forEach(element => {
+            if (element > largest) {
+                largest = element;
+            }
+        });
+
+        // print the result
+        document.writeln(largest);
+    </script>
+</body>
+</html>

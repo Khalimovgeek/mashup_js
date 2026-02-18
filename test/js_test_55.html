@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js test 55</title>
+</head>
+<body>
+    
+    <script>
+
+        // array initialization
+        arr = [1,2,4,1,4,2,4366,6,2,7,9,3,2,6,3,86,4,2,77,66,334];
+
+        // result array
+        new_arr = [];
+        
+        // remove duplicates
+        arr.forEach(element => {
+            if(!new_arr.includes(element)){
+                new_arr.push(element);
+            }
+            
+        });
+
+        // result outputs
+
+        document.writeln(new_arr);
+        console.log(new_arr);
+    </script>
+</body>
+</html>
