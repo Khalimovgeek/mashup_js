@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js arrays</title>
+</head>
+<body>
+    <h1>
+        Js array
+    </h1>
+    <p>Given is an example of an array</p>
+    <p id="arr"></p>
+    <p>Array element by index call</p>
+    <script>
+
+        // array declaration
+
+        arr = ["hello","hi","bye"];
+
+        // call the array 
+        document.getElementById("arr").innerHTML = arr;
+
+
+        // call elements by index (for each method)
+        arr.forEach(element => {
+            document.writeln(element + "<br>");
+        });
+
+        // elment in index 0
+        document.writeln("element in index 0 <br>");
+        document.writeln(arr[0]);
+
+    </script>
+</body>
+</html>
