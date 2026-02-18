@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js arrays</title>
+</head>
+<body>
+    <h1>
+        Js array
+    </h1>
+    <p style="text-align: center; font-weight: bold;">Given is an example of an array</p>
+    <p id="arr"></p>
+    <p style="text-align: center; font-weight: bold;">Array element change</p>
+    <script>
+
+        // array declaration
+
+        arr = ["hello","hi","bye"];
+
+        // call the array 
+        document.getElementById("arr").innerHTML = arr;
+        
+
+        function write(index,element){
+            document.write(`<p>current value of ${index} is ${element}.</p>`);
+        }
+
+        // current value
+        write("arr[0]",arr[0]);
+
+
+        // change value 
+        arr[0] = "albin";
+
+        // current value
+        write("arr[0]",arr[0]);
+
+
+        
+
+    </script>
+</body>
+</html>
