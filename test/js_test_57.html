@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js test 57</title>
+</head>
+<body>
+    <script>
+        // array
+
+        
+
+           
+
+        a = [1,2,3,4,5,6,7,8,9,10];
+
+        // length of array
+        n = a.length;
+
+        // no of rotation
+        var r = Number(prompt("Enter the number of times to be rotated"));
+        
+        // formula
+        rr = ((r%n) +n)%n;
+
+        // result array
+        new_a = [];
+
+        // add elements
+        for(i =n-rr ; i< n;i++){
+            new_a.push(a[i]);
+        }
+        for(i = 0; i< n-rr; i++){
+            new_a.push(a[i]);
+        }
+        document.writeln(new_a)
+
+        // arr = [1,2,3,4,5,6,7,8,9,10];
+        // const n = arr.length;
+        // k = 5
+        // k = ((k % n) + n ) % n;
+        // document.writeln(arr.slice(n-k).concat(arr.slice(0,n-k)));
+    </script>
+</body>
+</html>
