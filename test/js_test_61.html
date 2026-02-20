@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js test 61</title>
+</head>
+<body>
+    <script>
+        
+        // common ellements in an array
+        a = [1,2,32,4,62,5,3,6,8,9,25];
+        b = [43,53,2,3,78,33,9,62,42,11];
+
+        var common =[];
+        a.forEach(element => {
+            for(let i =0; i<b.length;i++){
+                if (b[i] === element){
+                    
+                    common.push(element);
+                }
+            }
+        });
+
+        // output
+        document.writeln(common);
+        console.log(common);
+
+
+    </script>
+</body>
+</html>

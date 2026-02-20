@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js test 62</title>
+</head>
+<body>
+    <script>
+
+        // initialize array
+        a = [5, 7, 0, 2, 9, 0, 0,7, 0, 4];
+
+        new_a = [];
+        let count = 0;
+        // removing the occurance of array
+        for(let i = 0; i < a.length; i++){
+            if(a[i] === 0){
+                new_a.push(0);
+            }
+        }
+
+        // filter zeros
+        a = a.filter((item) => item !== 0);
+        // sorting
+        a.sort((a,b) => a-b);
+
+        // concat the arrays
+        new_a = a.concat(new_a);
+
+        // output
+        console.log(new_a);
+
+
+    </script>
+</body>
+</html>
