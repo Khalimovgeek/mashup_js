@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js test 58</title>
+</head>
+<body>
+    <script>
+        function longConsequtiveSeqUsingSorting(inputarray) {
+            if (inputarray.length === 0) {
+                return 0;
+            }
+            let countValue = 1;
+            let maxcountValue = 1;
+            for (let i = 1; i < inputarray.length; i++) {
+                if (inputarray[i - 1] + 1 === inputarray[i]) {
+                    countValue++;
+                } else if (inputarray[i - 1] !== inputarray[i]) {
+                    countValue = 1;
+                }
+                maxcountValue = Math.max(maxcountValue, countValue);
+            }
+            return maxcountValue;
+        }
+        const inputArray = [1,9,3,4,5,6,10,4,2,2];
+        const outputLongValue = longConsequtiveSeqUsingSorting(inputArray);
+        document.writeln(outputLongValue);
+            
+    </script>
+</body>
+</html>

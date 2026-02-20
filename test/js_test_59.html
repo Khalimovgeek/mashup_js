@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js test 59</title>
+</head>
+<body>
+    <script>
+        
+        // find the miising number in an array 
+
+        a = [1,9,3,4,5,6,7,8];
+        findMissing(a);
+
+        function findMissing(arr){
+            arr.sort((a,b) => a-b);
+            // missing value 
+            let missing;
+
+            // loop
+            for(let i=1;i<arr.length;i++){
+                if(a[i] == a[i-1]+1){
+                    continue;
+                }
+                else{
+                    missing = a[i] -1;
+                    break;
+                }
+            }
+
+
+            // print the output
+            document.write("missing value is " + missing);
+
+        }
+    </script>
+</body>
+</html>

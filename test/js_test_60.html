@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js test 60</title>
+</head>
+<body>
+    <script>
+        // [2, [3, 4], [5, [6, 7]]]
+
+        // array plain
+
+        a = [2, [3, 4], [5, [6, 7]]];
+
+        
+        new_a = [];
+        plaining(a);
+        document.writeln(new_a);
+        console.log(new_a)
+        function plaining(arr){
+            arr.forEach(element => {
+                if(typeof(element) == "number")  {
+                    new_a.push(element)
+                } 
+                else{
+                    plaining(element);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
