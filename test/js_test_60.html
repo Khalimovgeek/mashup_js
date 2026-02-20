@@ -13,11 +13,19 @@
 
         a = [2, [3, 4], [5, [6, 7]]];
 
+        // input for debug
+        console.log(a);
         
+        // result array
         new_a = [];
+
+        // function call
         plaining(a);
+        // display output
         document.writeln(new_a);
-        console.log(new_a)
+        console.log(new_a);
+
+        // recursive funtion
         function plaining(arr){
             arr.forEach(element => {
                 if(typeof(element) == "number")  {
